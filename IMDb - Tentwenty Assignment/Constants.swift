@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+enum ErrorCodes{
+    case APIFailure
+    
+    var description :String {
+        switch self {
+        case .APIFailure:
+            return "Something went wrong, please try again later"
+        }
+    }
+}
