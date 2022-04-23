@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		09B945CF81BC4B3D8A1A6034 /* Pods_IMDb___Tentwenty_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDB75F4D3A7FA7AF8B0F66E /* Pods_IMDb___Tentwenty_Assignment.framework */; };
 		AE3BBF862813D6D2009C1424 /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3BBF852813D6D2009C1424 /* RealmDB.swift */; };
+		AE6218B728140A5D00F63B79 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6218B528140A5D00F63B79 /* MovieCollectionViewCell.swift */; };
+		AE6218B828140A5D00F63B79 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE6218B628140A5D00F63B79 /* MovieCollectionViewCell.xib */; };
 		AE7061682813BB7700140531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7061672813BB7700140531 /* AppDelegate.swift */; };
 		AE70616A2813BB7700140531 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7061692813BB7700140531 /* SceneDelegate.swift */; };
 		AE70616C2813BB7700140531 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE70616B2813BB7700140531 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 		6E60A4F1E1757FA25335D387 /* Pods-IMDb - Tentwenty Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDb - Tentwenty Assignment.release.xcconfig"; path = "Target Support Files/Pods-IMDb - Tentwenty Assignment/Pods-IMDb - Tentwenty Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		98CCD9912881239B714A3DA9 /* Pods-IMDb - Tentwenty Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDb - Tentwenty Assignment.debug.xcconfig"; path = "Target Support Files/Pods-IMDb - Tentwenty Assignment/Pods-IMDb - Tentwenty Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		AE3BBF852813D6D2009C1424 /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
+		AE6218B528140A5D00F63B79 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE6218B628140A5D00F63B79 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE7061642813BB7700140531 /* IMDb - Tentwenty Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMDb - Tentwenty Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7061672813BB7700140531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE7061692813BB7700140531 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 		AE7061832813BC4900140531 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
+				AE6218B528140A5D00F63B79 /* MovieCollectionViewCell.swift */,
+				AE6218B628140A5D00F63B79 /* MovieCollectionViewCell.xib */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6218B828140A5D00F63B79 /* MovieCollectionViewCell.xib in Resources */,
 				AE7061822813BBFF00140531 /* MoviesListingViewController.xib in Resources */,
 				AE7061742813BB7900140531 /* LaunchScreen.storyboard in Resources */,
 				AE7061712813BB7900140531 /* Assets.xcassets in Resources */,
@@ -279,6 +286,7 @@
 				AE3BBF862813D6D2009C1424 /* RealmDB.swift in Sources */,
 				AE7061682813BB7700140531 /* AppDelegate.swift in Sources */,
 				AECF05B72813C4EB00D58B9D /* Utilities.swift in Sources */,
+				AE6218B728140A5D00F63B79 /* MovieCollectionViewCell.swift in Sources */,
 				AE70616A2813BB7700140531 /* SceneDelegate.swift in Sources */,
 				AECF05B92813C5A300D58B9D /* BackendAPI.swift in Sources */,
 			);

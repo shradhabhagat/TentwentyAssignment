@@ -6,7 +6,7 @@ target 'IMDb - Tentwenty Assignment' do
   use_frameworks!
 
   # Pods for IMDb - Tentwenty Assignment
-
+    pod 'SDWebImage', '~> 4.0'
     pod 'RxSwift', '5.0'
     pod 'RxCocoa', '5.0'
     pod 'RealmSwift'

@@ -14,6 +14,9 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -22,6 +25,7 @@ DEPENDENCIES:
   - RxCocoa (= 5.0)
   - RxGesture (= 3.0.1)
   - RxSwift (= 5.0)
+  - SDWebImage (~> 4.0)
   - SVProgressHUD
 
 SPEC REPOS:
@@ -33,6 +37,7 @@ SPEC REPOS:
     - RxGesture
     - RxRelay
     - RxSwift
+    - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -43,8 +48,9 @@ SPEC CHECKSUMS:
   RxGesture: a3f8dd6adf078110ed5e1c9c30d09d705a09852e
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: c65adef3b2ce7085defc4f7ebd7fc59c2d9927bc
+PODFILE CHECKSUM: 01bd2af59ab4d4137b8278976ee1b945433b3bcc
 
 COCOAPODS: 1.11.3

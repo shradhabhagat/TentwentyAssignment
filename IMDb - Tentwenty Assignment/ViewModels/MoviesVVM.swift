@@ -13,7 +13,7 @@ class MoviesVVM{
     init() {
     }
     
-    private let _successResponse = BehaviorRelay<AllMoviesList_Codable?>(value: nil)
+    private let _movieItems = BehaviorRelay<(items: [MovieItem_Codable], isOffline: Bool)?>(value: nil)
     private let _isFetching = BehaviorRelay<Bool>(value: false)
     private let _error = BehaviorRelay<String?>(value: nil)
     
@@ -25,8 +25,12 @@ class MoviesVVM{
         return _error.asDriver()
     }
     
-    var successResponse: Driver<AllMoviesList_Codable?> {
-        return _successResponse.asDriver()
+    var movieItems: Driver<(items: [MovieItem_Codable], isOffline: Bool)?> {
+        return _movieItems.asDriver()
+    }
+    
+    var dataSource: [MovieItem_Codable] {
+        return _movieItems.value?.items ?? []
     }
     
     public func fetchAllMovies() {
@@ -35,18 +39,32 @@ class MoviesVVM{
         
         let backendService: BackendAPI = .getMovieList
         backendService.makeRequest { response in
+            self._isFetching.accept(false)
             switch response.result{
             case .success:
             do{
                 let moviesResponse = try JSONDecoder().decode(AllMoviesList_Codable.self, from: response.data!)
-                self._successResponse.accept(moviesResponse)
+                RealmDB.shared.deleteRecords()
+                if let movies = moviesResponse.results{
+                    RealmDB.shared.addData(newObjects: movies)
+                    self._movieItems.accept((items: movies, isOffline: false))
+                }
             } catch {
-                print("Error decoding data")
+                
+                if let movies = RealmDB.shared.getMoviesData(), movies.count > 0{
+                    self._movieItems.accept((items: Array(movies), isOffline: true))
+                } else{
+                    self._error.accept(ErrorCodes.APIFailure.description)
+                }
             }
             case .failure:
-                print("API Error")
+                self._error.accept(ErrorCodes.APIFailure.description)
+                if let movies = RealmDB.shared.getMoviesData(), movies.count > 0{
+                    self._movieItems.accept((items: Array(movies), isOffline: true))
+                } else{
+                    self._error.accept(ErrorCodes.APIFailure.description)
+                }
             }
         }
     }
-    
 }

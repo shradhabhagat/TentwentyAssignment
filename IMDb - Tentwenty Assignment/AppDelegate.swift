@@ -23,7 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     static func setMoviesListingAsRootVC(){
-        AppDelegate.shared.window?.rootViewController = MoviesListingViewController.init(nibName: nil, bundle: nil)
+        let vc = MoviesListingViewController.init(nibName: nil, bundle: nil)
+        let navigationVC = UINavigationController.init(rootViewController: vc)
+        navigationVC.setNavigationBarHidden(true, animated: false)
+        AppDelegate.shared.window?.rootViewController = navigationVC
     }
 
     // MARK: UISceneSession Lifecycle

@@ -12,7 +12,7 @@ import RealmSwift
 struct AllMoviesList_Codable: Codable {
     let page: Int?
     let totalPages: Int?
-    var results: [MovieItem_Codable]
+    var results: [MovieItem_Codable]?
 }
 
 //REALM OBJECT CLASS
