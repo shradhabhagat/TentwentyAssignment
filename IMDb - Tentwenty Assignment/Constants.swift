@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum ErrorCodes{
     case APIFailure
@@ -17,3 +18,5 @@ enum ErrorCodes{
         }
     }
 }
+
+let genreColors: [UIColor] = [.brown, .purple , .gray, .orange]

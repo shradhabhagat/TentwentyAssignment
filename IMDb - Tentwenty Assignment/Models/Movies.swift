@@ -32,3 +32,36 @@ class MovieItem_Codable: Object, Codable {
         return lhs.id == rhs.id
     }
 }
+
+// Movie Details Model
+struct MovieDetails_Codable: Codable {
+    let id: Int?
+    let poster_path: String?
+    let overview: String?
+    let title: String?
+    let release_date: String?
+    var genres: [Genre_Codable]?
+    
+    enum CodingKeys: String, CodingKey {
+            case genres, id
+            case overview
+            case poster_path = "poster_path"
+            case release_date = "release_date"
+            case title
+        }
+}
+
+struct Genre_Codable: Codable {
+    let id: Int?
+    let name: String?
+}
+
+// Movie Trailer Model
+struct Trailer_Codable: Codable {
+    let id: Int?
+    let results: [TrailerResult_Codable]?
+}
+
+struct TrailerResult_Codable: Codable {
+    let key: String?
+}

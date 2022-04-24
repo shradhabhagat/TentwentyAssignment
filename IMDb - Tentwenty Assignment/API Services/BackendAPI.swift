@@ -10,7 +10,8 @@ import Alamofire
 
 enum BackendAPI{
     case getMovieList
-    case getMovieDetails(movieID: String)
+    case getMovieDetails(movieID: Int)
+    case getMovieTrailer(movieID: Int)
     
     private var baseURL: String {
         return  "https://api.themoviedb.org/3/"
@@ -30,6 +31,8 @@ enum BackendAPI{
             return "movie/upcoming"
         case .getMovieDetails(let movieID):
             return "movie/\(movieID)"
+        case .getMovieTrailer(let movieID):
+            return "movie/\(movieID)/videos"
         }
     }
     
@@ -45,7 +48,6 @@ enum BackendAPI{
         guard let url = url else {
             return
         }
-
         AF.request(url, method: self.method, parameters: self.paramters).response{ response in
             completionHandler(response)
         }

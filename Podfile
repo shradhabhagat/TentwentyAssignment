@@ -13,5 +13,6 @@ target 'IMDb - Tentwenty Assignment' do
     pod "RxGesture", '3.0.1'
     pod 'Alamofire'
     pod 'SVProgressHUD'
+    pod "youtube-ios-player-helper"
 
 end

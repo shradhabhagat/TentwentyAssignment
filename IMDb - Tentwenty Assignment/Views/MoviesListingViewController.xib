@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="collectionView" destination="swh-hw-XsF" id="Crx-8t-71U"/>
                 <outlet property="searchBar" destination="tOu-ho-Pbn" id="zF0-1I-WDb"/>
+                <outlet property="searchBtn" destination="DDh-UC-Usl" id="HKo-4c-OQg"/>
                 <outlet property="searchView" destination="Iip-fo-Wvt" id="PcJ-dP-HoR"/>
                 <outlet property="titleView" destination="gMy-Sv-l9V" id="MFJ-xw-baO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -29,8 +30,8 @@
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0R-sx-pnD">
                             <rect key="frame" x="0.0" y="57" width="414" height="70"/>
                             <subviews>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMy-Sv-l9V">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="70"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMy-Sv-l9V">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTo-mv-c1o">
                                             <rect key="frame" x="8" y="23.5" width="54" height="23"/>
@@ -39,7 +40,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-UC-Usl">
-                                            <rect key="frame" x="-55" y="10" width="50" height="50"/>
+                                            <rect key="frame" x="359" y="10" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="EPg-qW-PU3"/>
                                                 <constraint firstAttribute="width" constant="50" id="Q17-C0-otj"/>
@@ -57,11 +58,11 @@
                                         <constraint firstItem="DDh-UC-Usl" firstAttribute="centerY" secondItem="gMy-Sv-l9V" secondAttribute="centerY" id="oHk-1d-R3t"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iip-fo-Wvt">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iip-fo-Wvt">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="70"/>
                                     <subviews>
                                         <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="tOu-ho-Pbn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="70"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </searchBar>
                                     </subviews>

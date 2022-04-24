@@ -15,6 +15,8 @@ class MoviesListingViewController: UIViewController {
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var searchBtn: UIButton!
+    
     let bag = DisposeBag()
     
     lazy var viewModel: MoviesVVM = {
@@ -69,7 +71,16 @@ class MoviesListingViewController: UIViewController {
                 self?.collectionView.reloadData()
             })
             .disposed(by: bag)
+        
+        searchBtn.rx.tap
+            .subscribe(onNext: {[weak self] _ in
+                self?.titleView.isHidden = true
+                self?.searchView.isHidden = false
+                self?.collectionView.reloadData()
+            })
+            .disposed(by: bag)
     }
+    
 }
 
 
@@ -102,12 +113,15 @@ extension MoviesListingViewController: UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.frame.width / 2) - 5
-        return CGSize(width: collectionView.frame.width, height: collectionView.frame.width / 1.75)
+        let width = (self.titleView.isHidden) ? (collectionView.frame.width / 1.75) : collectionView.frame.width
+        return CGSize(width: width, height: collectionView.frame.width / 1.75)
         
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Movie ID: \(self.viewModel.dataSource[indexPath.row].id)")
+        let movieId = self.viewModel.dataSource[indexPath.row].id
+        let vc = MovieDetailsViewController(movieID: movieId)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
