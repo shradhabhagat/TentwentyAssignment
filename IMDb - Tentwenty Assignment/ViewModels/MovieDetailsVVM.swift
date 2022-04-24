@@ -77,10 +77,10 @@ class MovieDetailsVVM{
                 let moviesTrailerResponse = try JSONDecoder().decode(Trailer_Codable.self, from: response.data!)
                 self._movieTrailer.accept(moviesTrailerResponse.results?.first)
             } catch {
-                self._error.accept(ErrorCodes.APIFailure.description)
+                return
             }
             case .failure:
-                self._error.accept(ErrorCodes.APIFailure.description)
+                return
             }
         }
     }

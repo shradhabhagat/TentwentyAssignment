@@ -26,6 +26,8 @@
 		AE75765E28147A6B00D7B9DE /* GenresCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE75765C28147A6B00D7B9DE /* GenresCollectionViewCell.xib */; };
 		AE94AE812815100F00DBB735 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94AE7F2815100F00DBB735 /* VideoPlayerViewController.swift */; };
 		AE94AE822815100F00DBB735 /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94AE802815100F00DBB735 /* VideoPlayerViewController.xib */; };
+		AE94AE8528152D9400DBB735 /* SearchResultsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94AE8328152D9400DBB735 /* SearchResultsCollectionViewCell.swift */; };
+		AE94AE8628152D9400DBB735 /* SearchResultsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94AE8428152D9400DBB735 /* SearchResultsCollectionViewCell.xib */; };
 		AECF05B12813C12E00D58B9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF05B02813C12E00D58B9D /* Constants.swift */; };
 		AECF05B32813C37100D58B9D /* MoviesVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF05B22813C37100D58B9D /* MoviesVVM.swift */; };
 		AECF05B52813C3C700D58B9D /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF05B42813C3C700D58B9D /* Movies.swift */; };
@@ -56,6 +58,8 @@
 		AE75765C28147A6B00D7B9DE /* GenresCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE94AE7F2815100F00DBB735 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		AE94AE802815100F00DBB735 /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
+		AE94AE8328152D9400DBB735 /* SearchResultsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE94AE8428152D9400DBB735 /* SearchResultsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsCollectionViewCell.xib; sourceTree = "<group>"; };
 		AECF05B02813C12E00D58B9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AECF05B22813C37100D58B9D /* MoviesVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVVM.swift; sourceTree = "<group>"; };
 		AECF05B42813C3C700D58B9D /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				AE6218B628140A5D00F63B79 /* MovieCollectionViewCell.xib */,
 				AE75765B28147A6B00D7B9DE /* GenresCollectionViewCell.swift */,
 				AE75765C28147A6B00D7B9DE /* GenresCollectionViewCell.xib */,
+				AE94AE8328152D9400DBB735 /* SearchResultsCollectionViewCell.swift */,
+				AE94AE8428152D9400DBB735 /* SearchResultsCollectionViewCell.xib */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE6218B828140A5D00F63B79 /* MovieCollectionViewCell.xib in Resources */,
+				AE94AE8628152D9400DBB735 /* SearchResultsCollectionViewCell.xib in Resources */,
 				AE94AE822815100F00DBB735 /* VideoPlayerViewController.xib in Resources */,
 				AE7061822813BBFF00140531 /* MoviesListingViewController.xib in Resources */,
 				AE7061742813BB7900140531 /* LaunchScreen.storyboard in Resources */,
@@ -317,6 +324,7 @@
 				AE94AE812815100F00DBB735 /* VideoPlayerViewController.swift in Sources */,
 				AE70616A2813BB7700140531 /* SceneDelegate.swift in Sources */,
 				AECF05B92813C5A300D58B9D /* BackendAPI.swift in Sources */,
+				AE94AE8528152D9400DBB735 /* SearchResultsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import RealmSwift
 
 struct AllMoviesList_Codable: Codable {
     let page: Int?
-    let totalPages: Int?
+    let total_pages: Int?
     var results: [MovieItem_Codable]?
 }
 

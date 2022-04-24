@@ -25,7 +25,7 @@ class GenresCollectionViewCell: UICollectionViewCell {
             self.btn.isHidden = false
             self.btn.isUserInteractionEnabled = false
             self.btn.setTitle(genre.name, for: .normal)
-            self.btn.layer.cornerRadius = 20
+            self.btn.layer.cornerRadius = 12
         } else{
             self.btn.isHidden = true
         }

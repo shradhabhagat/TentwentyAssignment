@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 enum BackendAPI{
-    case getMovieList
+    case getMovieList(page: Int)
     case getMovieDetails(movieID: Int)
     case getMovieTrailer(movieID: Int)
     
@@ -22,7 +22,13 @@ enum BackendAPI{
     }
     
     var paramters: [String: Any]?{
-        return ["api_key": apiKey]
+        switch self{
+        case .getMovieList(let page):
+            return ["api_key": apiKey, "page": page]
+        default:
+            return ["api_key": apiKey]
+        }
+        
     }
     
     private var path: String{

@@ -41,9 +41,12 @@ class MovieDetailsViewController: UIViewController {
     
     private func setupBindings(){
         viewModel?.error
-            .drive(onNext: { message in
+            .drive(onNext: { [weak self] message in
                 if let message = message{
                     print("Error: " + message)
+                    Utilities.showAlert(vc: self, title: "Error", havingSubtitle: message, buttonName: "Retry") {
+                        self?.viewModel?.fetchMovieDetail()
+                    }
                 }
             })
             .disposed(by: bag)
@@ -87,12 +90,12 @@ class MovieDetailsViewController: UIViewController {
     
     private func setupTools(){
         self.trailerBtn.layer.masksToBounds = true
-        self.trailerBtn.layer.cornerRadius = 12.0
+        self.trailerBtn.layer.cornerRadius = 10.0
         self.trailerBtn.layer.borderWidth = 1.0
         self.trailerBtn.layer.borderColor = UIColor.cyan.cgColor
         
         self.ticketBtn.layer.masksToBounds = true
-        self.ticketBtn.layer.cornerRadius = 12.0
+        self.ticketBtn.layer.cornerRadius = 10.0
         
     }
     
