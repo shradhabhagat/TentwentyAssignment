@@ -15,7 +15,6 @@ class SeatSelectDeatailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.paymentBtn.layer.cornerRadius = 12.0
         self.amountPayableView.layer.cornerRadius = 12.0
     }
