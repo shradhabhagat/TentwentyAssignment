@@ -37,7 +37,6 @@ class MoviesListingViewController: UIViewController {
     }
     
     @objc func searchTextFieldUpdated(){
-        print("Did enter seaech")
         searchBar.rx.text.orEmpty
             .debounce(.milliseconds(500), scheduler: MainScheduler.instance)
             .distinctUntilChanged()
@@ -60,9 +59,11 @@ class MoviesListingViewController: UIViewController {
         self.collectionView.register(UINib(nibName: MovieCollectionViewCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: MovieCollectionViewCell.reuseIdentifier)
         self.collectionView.register(UINib(nibName: SearchResultsCollectionViewCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: SearchResultsCollectionViewCell.reuseIdentifier)
     }
+    
     @IBAction func didClickReloadData(_ sender: Any) {
         self.viewModel.fetchAllMovies()
     }
+    
     @IBAction func didClickSearchBtn(_ sender: UIButton) {
         self.titleView.isHidden = true
         self.searchView.isHidden = false
@@ -185,7 +186,7 @@ extension MoviesListingViewController: UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row == (self.viewModel.dataSource.count - 1){
+        if indexPath.row == (self.viewModel.dataSource.count - 1), !self.titleView.isHidden{
             self.viewModel.fetchNextPage()
         }
     }

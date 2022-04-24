@@ -78,6 +78,16 @@ class MovieDetailsViewController: UIViewController {
                 self?.playVideo(trailer: movieTrailer)
             })
             .disposed(by: bag)
+        ticketBtn.rx.tap
+            .subscribe(onNext: { [weak self] _ in
+                self?.ticketClick()
+            })
+            .disposed(by: bag)
+    }
+    
+    private func ticketClick(){
+        let vc = SeatSelectionViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     private func playVideo(trailer: TrailerResult_Codable?) {

@@ -28,6 +28,15 @@
 		AE94AE822815100F00DBB735 /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94AE802815100F00DBB735 /* VideoPlayerViewController.xib */; };
 		AE94AE8528152D9400DBB735 /* SearchResultsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94AE8328152D9400DBB735 /* SearchResultsCollectionViewCell.swift */; };
 		AE94AE8628152D9400DBB735 /* SearchResultsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94AE8428152D9400DBB735 /* SearchResultsCollectionViewCell.xib */; };
+		AE94AE8D28154FF200DBB735 /* SeatSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94AE8B28154FF200DBB735 /* SeatSelectionViewController.swift */; };
+		AE94AE8E28154FF200DBB735 /* SeatSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94AE8C28154FF200DBB735 /* SeatSelectionViewController.xib */; };
+		AE94AE91281581CF00DBB735 /* SelectSeatDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94AE8F281581CF00DBB735 /* SelectSeatDateCollectionViewCell.swift */; };
+		AE94AE92281581CF00DBB735 /* SelectSeatDateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94AE90281581CF00DBB735 /* SelectSeatDateCollectionViewCell.xib */; };
+		AE94AE95281582EC00DBB735 /* SelectHallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94AE93281582EC00DBB735 /* SelectHallCollectionViewCell.swift */; };
+		AE94AE96281582EC00DBB735 /* SelectHallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94AE94281582EC00DBB735 /* SelectHallCollectionViewCell.xib */; };
+		AE94AE982815A6FA00DBB735 /* Seats.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94AE972815A6FA00DBB735 /* Seats.swift */; };
+		AE94AE9B2815AD7200DBB735 /* SeatSelectDeatailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94AE992815AD7200DBB735 /* SeatSelectDeatailsViewController.swift */; };
+		AE94AE9C2815AD7200DBB735 /* SeatSelectDeatailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94AE9A2815AD7200DBB735 /* SeatSelectDeatailsViewController.xib */; };
 		AECF05B12813C12E00D58B9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF05B02813C12E00D58B9D /* Constants.swift */; };
 		AECF05B32813C37100D58B9D /* MoviesVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF05B22813C37100D58B9D /* MoviesVVM.swift */; };
 		AECF05B52813C3C700D58B9D /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF05B42813C3C700D58B9D /* Movies.swift */; };
@@ -60,6 +69,15 @@
 		AE94AE802815100F00DBB735 /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
 		AE94AE8328152D9400DBB735 /* SearchResultsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE94AE8428152D9400DBB735 /* SearchResultsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsCollectionViewCell.xib; sourceTree = "<group>"; };
+		AE94AE8B28154FF200DBB735 /* SeatSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectionViewController.swift; sourceTree = "<group>"; };
+		AE94AE8C28154FF200DBB735 /* SeatSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeatSelectionViewController.xib; sourceTree = "<group>"; };
+		AE94AE8F281581CF00DBB735 /* SelectSeatDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE94AE90281581CF00DBB735 /* SelectSeatDateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectSeatDateCollectionViewCell.xib; sourceTree = "<group>"; };
+		AE94AE93281582EC00DBB735 /* SelectHallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHallCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE94AE94281582EC00DBB735 /* SelectHallCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectHallCollectionViewCell.xib; sourceTree = "<group>"; };
+		AE94AE972815A6FA00DBB735 /* Seats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seats.swift; sourceTree = "<group>"; };
+		AE94AE992815AD7200DBB735 /* SeatSelectDeatailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectDeatailsViewController.swift; sourceTree = "<group>"; };
+		AE94AE9A2815AD7200DBB735 /* SeatSelectDeatailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeatSelectDeatailsViewController.xib; sourceTree = "<group>"; };
 		AECF05B02813C12E00D58B9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AECF05B22813C37100D58B9D /* MoviesVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVVM.swift; sourceTree = "<group>"; };
 		AECF05B42813C3C700D58B9D /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
@@ -155,6 +173,10 @@
 				AE6218BA28143EE800F63B79 /* MovieDetailsViewController.xib */,
 				AE94AE7F2815100F00DBB735 /* VideoPlayerViewController.swift */,
 				AE94AE802815100F00DBB735 /* VideoPlayerViewController.xib */,
+				AE94AE8B28154FF200DBB735 /* SeatSelectionViewController.swift */,
+				AE94AE8C28154FF200DBB735 /* SeatSelectionViewController.xib */,
+				AE94AE992815AD7200DBB735 /* SeatSelectDeatailsViewController.swift */,
+				AE94AE9A2815AD7200DBB735 /* SeatSelectDeatailsViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				AECF05B42813C3C700D58B9D /* Movies.swift */,
+				AE94AE972815A6FA00DBB735 /* Seats.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +199,10 @@
 				AE75765C28147A6B00D7B9DE /* GenresCollectionViewCell.xib */,
 				AE94AE8328152D9400DBB735 /* SearchResultsCollectionViewCell.swift */,
 				AE94AE8428152D9400DBB735 /* SearchResultsCollectionViewCell.xib */,
+				AE94AE8F281581CF00DBB735 /* SelectSeatDateCollectionViewCell.swift */,
+				AE94AE90281581CF00DBB735 /* SelectSeatDateCollectionViewCell.xib */,
+				AE94AE93281582EC00DBB735 /* SelectHallCollectionViewCell.swift */,
+				AE94AE94281582EC00DBB735 /* SelectHallCollectionViewCell.xib */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -248,7 +275,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE94AE92281581CF00DBB735 /* SelectSeatDateCollectionViewCell.xib in Resources */,
 				AE6218B828140A5D00F63B79 /* MovieCollectionViewCell.xib in Resources */,
+				AE94AE96281582EC00DBB735 /* SelectHallCollectionViewCell.xib in Resources */,
 				AE94AE8628152D9400DBB735 /* SearchResultsCollectionViewCell.xib in Resources */,
 				AE94AE822815100F00DBB735 /* VideoPlayerViewController.xib in Resources */,
 				AE7061822813BBFF00140531 /* MoviesListingViewController.xib in Resources */,
@@ -256,6 +285,8 @@
 				AE75765E28147A6B00D7B9DE /* GenresCollectionViewCell.xib in Resources */,
 				AE7061712813BB7900140531 /* Assets.xcassets in Resources */,
 				AE6218BC28143EE800F63B79 /* MovieDetailsViewController.xib in Resources */,
+				AE94AE9C2815AD7200DBB735 /* SeatSelectDeatailsViewController.xib in Resources */,
+				AE94AE8E28154FF200DBB735 /* SeatSelectionViewController.xib in Resources */,
 				AE70616F2813BB7700140531 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,9 +340,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE94AE9B2815AD7200DBB735 /* SeatSelectDeatailsViewController.swift in Sources */,
 				AECF05B52813C3C700D58B9D /* Movies.swift in Sources */,
 				AECF05B32813C37100D58B9D /* MoviesVVM.swift in Sources */,
 				AE75765D28147A6B00D7B9DE /* GenresCollectionViewCell.swift in Sources */,
+				AE94AE91281581CF00DBB735 /* SelectSeatDateCollectionViewCell.swift in Sources */,
+				AE94AE95281582EC00DBB735 /* SelectHallCollectionViewCell.swift in Sources */,
+				AE94AE8D28154FF200DBB735 /* SeatSelectionViewController.swift in Sources */,
 				AECF05B12813C12E00D58B9D /* Constants.swift in Sources */,
 				AE7061812813BBFF00140531 /* MoviesListingViewController.swift in Sources */,
 				AE70616C2813BB7700140531 /* ViewController.swift in Sources */,
@@ -324,6 +359,7 @@
 				AE94AE812815100F00DBB735 /* VideoPlayerViewController.swift in Sources */,
 				AE70616A2813BB7700140531 /* SceneDelegate.swift in Sources */,
 				AECF05B92813C5A300D58B9D /* BackendAPI.swift in Sources */,
+				AE94AE982815A6FA00DBB735 /* Seats.swift in Sources */,
 				AE94AE8528152D9400DBB735 /* SearchResultsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

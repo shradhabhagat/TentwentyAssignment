@@ -17,10 +17,6 @@ enum BackendAPI{
         return  "https://api.themoviedb.org/3/"
     }
     
-    private var apiKey: String {
-        return  "1174629886ef65a9e006dc7bac9ce18a"
-    }
-    
     var paramters: [String: Any]?{
         switch self{
         case .getMovieList(let page):
@@ -44,6 +40,10 @@ enum BackendAPI{
     
     var url: URL?{
         return URL(string: baseURL + self.path)
+    }
+    
+    private var apiKey: String {
+        return  "7b277efb665b3a44e7d3bf3e31ff62a6"
     }
     
     var method: HTTPMethod {

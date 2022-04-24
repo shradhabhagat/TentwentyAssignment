@@ -46,7 +46,7 @@ class MoviesVVM{
     
     func filterResultsBySearch(str: String?){
         if let str = str, !str.isEmpty {
-            let movies = self.dataSource.filter({$0.title?.prefix(str.count).lowercased() == str.lowercased()})
+            let movies = self.dataSource.filter({($0.title ?? "").lowercased().contains(str.lowercased()) })
             self._searchedMovieItems.accept(movies)
         } else{
             self._searchedMovieItems.accept(nil)
